@@ -33,6 +33,12 @@ export default function Authenticated({
                                 >
                                     Dashboard
                                 </NavLink>
+                                <NavLink
+                                    href={route('karyawan.index')}
+                                    active={route().current('karyawan.*')}
+                                >
+                                    Karyawan
+                                </NavLink>
                             </div>
                         </div>
 
@@ -136,6 +142,12 @@ export default function Authenticated({
                             active={route().current('dashboard')}
                         >
                             Dashboard
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            href={route('karyawan.index')}
+                            active={route().current('karyawan.*')}
+                        >
+                            Karyawan
                         </ResponsiveNavLink>
                     </div>
 
